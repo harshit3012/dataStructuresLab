@@ -9,14 +9,12 @@ void display(int a[100], int *z);
 int pop(int a[100], int *z);
 int main(){
     int arr[100], choice, cont, size, i, z=-1;
-    cont=1;
     printf("Enter the total number of elements - \n");
     scanf("%d",&size);
     for(i=0;i<size;i++){
         printf("\nEnter element %d- ",i);
         scanf("%d", &arr[i]);
         z++;
-
     }
     do{
         printf("\nEnter the operation number -\n1. Push\n2. Pop\n3. Display\n");
@@ -42,7 +40,6 @@ int main(){
         scanf("%d", &cont);
     }while(cont==1);
     return 0;
-
 }
 void push(int a[], int ele, int *z){
     if(*z==99){
