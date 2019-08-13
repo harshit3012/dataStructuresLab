@@ -1,8 +1,13 @@
+/*Program to Push, Pop, and Display elements in an array
+Author - Harshit Hiremath
+USN - 1BM18CS036
+Date - 13/08/19 */
+
 #include<stdio.h>
 void push(int a[100], int ele, int *z);
 void display(int a[100], int *z);
 int pop(int a[100], int *z);
-void main(){
+int main(){
     int arr[100], choice, cont, size, i, z=-1;
     cont=1;
     printf("Enter the total number of elements - \n");
@@ -14,7 +19,7 @@ void main(){
 
     }
     do{
-        printf("\n Enter the operation number -\n1. Push\n2. Pop\n3. Display\n");
+        printf("\nEnter the operation number -\n1. Push\n2. Pop\n3. Display\n");
         scanf("%d",&choice);
         switch(choice){
         case 1: {
@@ -36,6 +41,7 @@ void main(){
         printf("\nDo you want to repeat?\n(Enter 1 for yes, 0 for no)-");
         scanf("%d", &cont);
     }while(cont==1);
+    return 0;
 
 }
 void push(int a[], int ele, int *z){
@@ -51,6 +57,7 @@ void display(int a[], int *z){
         printf("Stack is empty\n");
         return;
     }
+    printf("The elements currently in the array are -\n");
     int i;
     for(i=0;i<=*z;i++){
         printf("%d\n",a[i]);
