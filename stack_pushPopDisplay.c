@@ -1,7 +1,4 @@
-/*Program to Push, Pop, and Display elements in an array
-Author - Harshit Hiremath
-USN - 1BM18CS036
-Date - 13/08/19 */
+//Program to Push, Pop, and Display elements in an array.
 
 #include<stdio.h>
 void push(int a[100], int ele, int *z);
