@@ -1,6 +1,5 @@
-/*Program to print whether a student qualifies for admission into the college.
-Author:Harshit Hiremath
-1BM18CS036*/
+//Program to print whether a student qualifies for admission into the college.
+
 #include<stdio.h>
 struct stu{
 	char id[20];
