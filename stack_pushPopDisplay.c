@@ -9,12 +9,12 @@ int main(){
     printf("Enter the total number of elements - \n");
     scanf("%d",&size);
     for(i=0;i<size;i++){
-        printf("\nEnter element %d- ",i);
+        printf("Enter element %d- ",i);
         scanf("%d", &arr[i]);
         z++;
     }
     do{
-        printf("\nEnter the operation number -\n1. Push\n2. Pop\n3. Display\n");
+        printf("\n1. Push\n2. Pop\n3. Display\nEnter the operation number - ");
         scanf("%d",&choice);
         switch(choice){
         case 1: {
@@ -24,14 +24,14 @@ int main(){
                 push(arr,b,&z);
                 break;
         }
-        case 2: {int x;
+        case 2: {
+                int x;
                 x=pop(arr, &z);
                 if(x!=-9999)
                     printf("Popped element is %d\n", x);
                 break;
         }
         case 3: display(arr, &z);
-
         }
         printf("\nDo you want to repeat?\n(Enter 1 for yes, 0 for no)-");
         scanf("%d", &cont);
@@ -54,11 +54,10 @@ void display(int a[], int *z){
     printf("The elements currently in the array are -\n");
     int i;
     for(i=0;i<=*z;i++){
-        printf("%d\n",a[i]);
+        printf("%d ",a[i]);
     }
 }
-int pop(int a[], int *z)
-{
+int pop(int a[], int *z){
     if(*z==-1){
         printf("Stack underflow\n");
         return -9999;
