@@ -1,3 +1,5 @@
+//Program to convert Infix expression to Postfix expression
+
 #include<stdio.h>
 #include<string.h>
 int F(char sym){
@@ -62,4 +64,3 @@ int main(){
 	}while(con==1);	
 	return 0;
 }
-			
