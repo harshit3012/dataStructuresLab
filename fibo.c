@@ -2,7 +2,7 @@
 int fib(int a);
 int main(){
 	int n, i, a;
-	printf("Enter the Number of series -\n");
+	printf("Enter the Number of values in the series -\n");
  	scanf("%d", &n);
  	for(i = 0 ; i < n ; i++){
  		a = fib(i);
