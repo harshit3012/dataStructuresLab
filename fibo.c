@@ -1,3 +1,5 @@
+//Program to print a given number of elements in a the Fibonacci series
+//1BM18CS036
 #include<stdio.h>
 int fib(int a);
 int main(){
@@ -25,4 +27,3 @@ int fib(int a){
 		return(x + y);
 	}
 }
-
