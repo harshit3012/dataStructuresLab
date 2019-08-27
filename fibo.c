@@ -1,10 +1,10 @@
 //Program to print a given number of elements in a the Fibonacci series
 //1BM18CS036
 #include<stdio.h>
-int fib(int a);
+double fib(double a);
 int main(){
 	int n, i, a;
-	printf("Enter the Number of values in the series -\n");
+	printf("Enter the Number of series -\n");
  	scanf("%d", &n);
  	for(i = 0 ; i < n ; i++){
  		a = fib(i);
@@ -13,8 +13,8 @@ int main(){
 	printf("\n");
 	return 0;
 }
-int fib(int a){
-	int x, y;
+double fib(double a){
+	double x, y;
 	if((a==0)){
 		return 0;
 	}
