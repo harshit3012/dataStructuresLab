@@ -28,7 +28,7 @@ void main(){
 }
 void enque(int q[], int *r){
 	int ele;
- 	if(*r == 99)
+ 	if(*r == 79)
 	 	printf("Queue is full");
 	else{
 		printf("Enter the element to be added - ");
@@ -41,17 +41,17 @@ void deque(int q[], int *r, int *f){
 	if(*f > *r)
 		printf("Queue is empty\n");
  	else{
- 		printf("Deleted element = %d\n", q[*f]);
+ 		printf("Deleted element = %d\n\n", q[*f]);
  		*f = *f + 1;
  	}
 }
 void display(int q[], int r, int f){
 	int i;
-	if(f == r)
+	if(f > r)
 		printf("Queue is empty\n");
 	else{
 		printf("Elements of queue\n");
  		for(i = f ; i <= r ; i++)
- 			printf("%d \n", q[i]);
+ 			printf("\t%d \n", q[i]);
  	}
 }
