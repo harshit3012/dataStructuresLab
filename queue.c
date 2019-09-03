@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-void enque(int q[100], int *r);
-void deque(int q[100], int *r, int *f);
-void display(int q[100], int r, int f);
+void enque(int q[], int *r);
+void deque(int q[], int *r, int *f);
+void display(int q[], int r, int f);
 void main(){
 	int q[80], front = 0, rear =- 1, ch;
 	while(1){
@@ -12,23 +12,23 @@ void main(){
   		switch(ch){
    			case 1:{
    				enque(q, &rear);
-          		break;
-          	}
+          			break;
+          		}
    			case 2:{
    				deque(q, &rear, &front);
-        		break;
-        	}
+        			break;
+        		}
    			case 3:{
    				display(q, rear, front);
-         		break;
-         	}
+         			break;
+         		}
    			case 4: exit(0);
 		}
 	}
 }
 void enque(int q[], int *r){
 	int ele;
- 	if(*r == 99)
+ 	if(*r == 79)
 	 	printf("Queue is full");
 	else{
 		printf("Enter the element to be added - ");
