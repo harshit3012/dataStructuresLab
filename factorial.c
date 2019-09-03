@@ -14,4 +14,4 @@ long int multiply(long int a){
 		return a * multiply(a - 1);
 	else
 		return 1;
-}	
+}
