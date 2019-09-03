@@ -40,16 +40,20 @@ void enque(int q[], int *r){
 void deque(int q[], int *r, int *f){
 	if(*f > *r)
 		printf("Queue is empty\n");
- 	else
+		return;
+ 	else{
  		printf("Deleted element = %d\n", q[*f]);
- 	*f = *f + 1;
+ 		*f = *f + 1;
+	}
 }
 void display(int q[], int r, int f){
 	int i;
 	if(f == r)
 		printf("Queue is empty\n");
-	else
+		return;
+	else{
 		printf("Elements of queue\n");
- 	for(i = f ; i <= r ; i++)
- 	printf("%d \n", q[i]);
+ 		for(i = f ; i <= r ; i++)
+ 		printf("%d \n", q[i]);
+	}
 }
