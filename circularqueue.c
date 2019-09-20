@@ -7,8 +7,8 @@ void insert(int item, int *r, int q[], int *f){
 	}
 	if(*f==-1)
 		*f = 0;
-		*r = (*r+1)%size;
-		q[*r] = item;
+	*r = (*r+1)%size;
+	q[*r] = item;
 }
 
 int delete(int q[], int *f, int *r){
