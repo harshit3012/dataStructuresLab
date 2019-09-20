@@ -13,7 +13,7 @@ void insert(int item, int *r, int q[], int *f){
 
 int delete(int q[], int *f, int *r){
 	int item;
-	if(*f == -1){
+	if((*f == -1) || (*f == *r)){
 		printf("Queue is empty\n");
 		return -9999;
 	}
