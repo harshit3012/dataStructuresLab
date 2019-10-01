@@ -59,7 +59,7 @@ int main(){
 					break;
 			case 2: top = pop(top);
 					break;
-			case 3: printf("Elements in Queue are - \n");
+			case 3: printf("Elements in Stack are - \n");
 					display(top);
 					break;
 			case 4: exit(0);
