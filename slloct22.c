@@ -210,6 +210,6 @@ int main(){
 					break;
 			case 11: return 0;
 		}
-	}while(choice != 9);
+	}while(choice != 11);
 	return 0;
 }
