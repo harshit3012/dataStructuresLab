@@ -124,13 +124,37 @@ NODE reverse(NODE head){
 	return q;
 }
 NODE concatenate(NODE head1, NODE head2, int ch){
-	
+	if(head1 == NULL){
+		return head2;
+	}
+	if(head2 == NULL){	
+		return head1;
+	} 
 	NODE p = head1;
 	NODE q = head2;
 	if(ch == 1){
-		while
+		while(p->next != NULL){
+			p = p->next;
+		}
+		while(q != NULL){
+			p->next = getnode();
+			p = p->next;
+			p->data = q->data;
+			q = q->next;
+		}
+		return head1;
 	}
 	if(ch == 2){
+		while(q->next != NULL){
+			q = q->next;
+		}
+		while(p != NULL){
+			q->next = getnode();
+			q = q->next;
+			q->data = p->data;
+			p = p->next;
+		}
+		return head2;
 	}
 }
 void display(NODE head){
@@ -152,7 +176,7 @@ int main(){
 	NODE head2 = NULL;
 	NODE head3 = NULL;
 	int choice;
-	printf("Operations -\n1. Insert element to List 1 (From front)\n2. Insert element to List 2 (From front)\n3. Sort List 1\n4. Sort List 2\n5. Reverse List 1\n6. Reverse List 2\n7. Merge the two lists\n8. Display lists\n9. Exit\n");
+	printf("Operations -\n1. Insert element to List 1 (From front)\n2. Insert element to List 2 (From front)\n3. Sort List 1\n4. Sort List 2\n5. Reverse List 1\n6. Reverse List 2\n7. Merge the two lists\n8. Concatenate list 2 to list 1\n9. Concatenate list 1 to list 2\n10. Display lists\n11. Exit\n");
 	do{
 		printf("Enter operation number : ");
 		scanf("%d", &choice);
@@ -173,14 +197,18 @@ int main(){
 					head2 = sort(head2);
 					head3 = merge(head1, head2);
 					break;
-			case 8: printf("List 1 : ");
+			case 8: head1 = concatenate(head1, head2, 1);
+					break;
+			case 9: head2 = concatenate(head1, head2, 2);
+					break;
+			case 10:printf("List 1 : ");
 					display(head1);
 					printf("List 2 : ");
 					display(head2);
 					printf("List 3 : ");
 					display(head3);
 					break;
-			case 9: return 0;
+			case 11: return 0;
 		}
 	}while(choice != 9);
 	return 0;
