@@ -119,7 +119,7 @@ NODE merge(NODE head1, NODE head2){
 		p->data = y->data;
 		y = y->next;
         /*
-        if(y != NULL){                  //Solves the last element is zero issue
+        if(y != NULL){                  //Solves the Last element is zero issue
             p->next = getnode();
             p = p->next;
         }
