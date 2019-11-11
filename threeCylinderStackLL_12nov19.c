@@ -94,8 +94,8 @@ int main(){
     //display(head3);
     size3 = ll_sum(head3);
     //printf("Size3 = %d\n", size3);
-    while(!((size1 == size2) && (size2 == size3))){
-        switch(biggest(size1, size2, size3)){
+    while(!((size1 == size2) && (size2 == size3))){     //While the sizes are not equal
+        switch(biggest(size1, size2, size3)){           //Switch to the biggest stack
             case 1: head1 = del_head(head1);
                     size1 = ll_sum(head1);
                     //printf("Deleted 1");
