@@ -60,7 +60,7 @@ int main(){
                     printf("\n");
                     break;
             case 3: ht = 0;
-                    height1(root, 1, &ht);
+                    height1(root, 0, &ht);		//Second argument is 0 as levels start from 0
                     printf("Height is %d\n", ht);
                     break;
             case 4: return 1;
