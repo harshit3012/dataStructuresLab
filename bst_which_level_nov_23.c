@@ -66,7 +66,7 @@ int main(){
                     found = 0;
                     printf("Integer whose level is to be found : ");
                     scanf("%d", &ele);
-                    which_level(root, 0, ele, &found, &which);
+                    which_level(root, 0, ele, &found, &which);			//Second argument is 0 as levels start from 0
                     if(found){
                         printf("Found and the level of %d is %d\n", ele, which);
                     }
