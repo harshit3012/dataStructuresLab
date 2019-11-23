@@ -63,8 +63,8 @@ int main(){
 					printf("\n");
 					break;
 			case 3: printf("Enter the level : ");
-					scanf("%d", &ele);				//ele = level
-					level_display(root, ele, 1);	//levels start from 1
+					scanf("%d", &ele);		//ele = level
+					level_display(root, ele, 0);	//levels start from 0
 					printf("\n");
 					break;
 			case 4: return 0;
