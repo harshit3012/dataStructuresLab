@@ -1,3 +1,3 @@
 # **Data Structures (in C) Lab files**
-> Harshit Hiremath [My instagram](www.instagram.com/harshit.hiremath)
-> 1BM18CS036
+> Harshit Hiremath          [insta](www.instagram.com/harshit.hiremath)
+> <br/>1BM18CS036
