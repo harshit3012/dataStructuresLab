@@ -1,3 +1,3 @@
 # **Data Structures (in C) Lab files**
-> Harshit Hiremath          [github acc](www.github.com/harshit3012)
+> Harshit Hiremath          [github acc](https://github.com/harshit3012)
 > <br/>1BM18CS036
