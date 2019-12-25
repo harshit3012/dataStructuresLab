@@ -85,6 +85,7 @@ void display(NODE head){
 	free(p);
 	return;
 }
+
 void main(){
 	int choice, pow, coeff;
 	NODE head1, head2, res;
