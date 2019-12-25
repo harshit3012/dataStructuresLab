@@ -25,11 +25,11 @@ NODE insert(NODE head){
 NODE add(NODE poly1, NODE poly2){
 	if(!poly1)	return poly2;		//if poly1 is empty, result is poly2
 	if(!poly2)	return poly1;		//if poly2 is empty, result is poly1
-	NODE a = poly1;					//Nodes a and b used for traversing
+	NODE a = poly1;				//Nodes a and b used for traversing
 	NODE b = poly2;
 	NODE res = getnode();			//Node res is used for traversing the result linked list
-	NODE temp = res;				//Temporary saving the head of result, and used in return statement
-	while(a && b){					//While both a and b arent empty
+	NODE temp = res;			//Temporary saving the head of result, and used in return statement
+	while(a && b){				//While both a and b arent empty
 		if(a->pow > b->pow){
 			res->pow = a->pow;
 			res->coeff = a->coeff;
@@ -91,25 +91,25 @@ void main(){
 	NODE head1, head2, res;
 	head1 = NULL;			//Initializing
 	head2 = NULL;			//Initializing
-	res = NULL;				//Initializing
+	res = NULL;			//Initializing
 	printf("1. Insert to polynomial 1\n2. Insert to polynomial 2\n3. Display all poly\n4. Add poly1 and poly2\n5. Exit\n");
 	do{
 		printf(">>> ");
 		scanf("%d", &choice);
 		switch(choice){
 			case 1: head1 = insert(head1);
-					break;
+				break;
 			case 2: head2 = insert(head2);
-					break;
+				break;
 			case 3: printf("Poly1 : ");
-					display(head1);
-					printf("Poly2 : ");
-					display(head2);
-					printf("Result: ");
-					display(res);
-					break;
+				display(head1);
+				printf("Poly2 : ");
+				display(head2);
+				printf("Result: ");
+				display(res);
+				break;
 			case 4: res = add(head1, head2);
-					break;
+				break;
 			case 5: return;
 		}
 	}while(choice!=5);
